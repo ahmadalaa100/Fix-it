@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   <link
+      href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,600,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+  
+  
+       
+   
+    <title>FiX IT</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar   -->
+      <div class="Nav_bar">
+        <div class="logo">
+          <h1>
+            
+            <span class="center">F</span>
+            <span class="center">I</span>
+            <span class="center">X</span>
+            <span class="center">I</span>
+            <span class="center">T</span>
+          
+          </h1>
+       
+        </div>
+       <ul class="nav">
+         <li><a href="#header center">Home</a></li>
+         <li><a href="#ourservice">Services</a></li>
+         <li><a href="#aboutus">ABOUT US</a></li>
+         <li><a href="#contact">Contact </a></li>
+       
+       </ul>
+       <div class="loo">
+       <a href="login.html" style="margin:0; padding: 0;border: none;"> <i class="fa fa-user-circle fa-2x" ></i></a>
+      </div> 
+       <!--
+       <button onclick="document.getElementById('id02').style.display='block'" class="login">
+         <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i></button>-->
+      </div>
+      <!-- End of Navbar -->
+
+      <!-- Header -->
+      <header class="header center" id="header center">
+        <div class="header-text">
+          <h1 class="heading">FIX &nbsp;<span class="it">IT</span> </h1>
+          <p class="header-paragraph">
+            "YOU USE IT WE FIX IT  "
+          </p>
+        </div>
+      
+      </header>
+    
+      <!-- End of Header -->
+           
+     
+        <!-- Start Our Work -->
+        <section  id="ourservice">
+        <div class="our-work text-center">
+          
+          <div class="container">
+            <br>
+            <br>
+              <h2 class="upper1">Our <span>Services</span></h2>
+             <br>
+             <br>
+             <br>
+              <div class="items-box">
+                  <div class="item">
+                      <img src="images/elec.jpg" alt=""  width="500px" height="500px"/>
+                      <div class="over text-center">
+                          <h4 class="upper">Electricity</h4>
+                          
+                          <button onclick="document.getElementById('id01').style.display='block'" class="boknow">Book now</button>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="images/plumbing.jpg" alt="" width="500px" height="500px" />
+                      <div class="over text-center">
+                          <h4 class="upper">Plumbing</h4>
+                         
+                          <button onclick="document.getElementById('id01').style.display='block'" class="boknow">Book now</button>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="images/painting.jpg" alt="" width="500px" height="500px"/>
+                      <div class="over text-center">
+                          <h4 class="upper">Painting</h4>
+                         
+                          <button onclick="document.getElementById('id01').style.display='block'" class="boknow">Book now</button>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="images/carpenter.jpeg" alt=""  width="500px" height="500px"/>
+                      <div class="over text-center">
+                          <h4 class="upper">Carpentry</h4>
+                         
+                          <button onclick="document.getElementById('id01').style.display='block'" class="boknow">Book now</button>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="images/Air.jpg" alt=""  width="500px" height="500px"/>
+                      <div class="over text-center">
+                          <h4 class="upper">Air Conditioning</h4>
+                          
+                          <button onclick="document.getElementById('id01').style.display='block'" class="boknow">Book now</button>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="images/glass.jpg" alt=""width="500px" height="500px" />
+                      <div class="over text-center">
+                          <h4 class="upper">Glass & Aluminium</h4>
+                         
+                          <button onclick="document.getElementById('id01').style.display='block'" class="boknow">Book now</button>
+                      </div>
+                  </div>
+                  
+              </div>
+             
+          </div>
+        </div>
+      
+      
+         <!-- Schedule -->
+         <div id="id01" class="modal">
+          <span onclick="document.getElementById('id01').style.display='none'" 
+          class="close" title="Close Modal">&times;</span>
+          <div class="data">
+            <div class="book">
+                <div class="calendar">
+                    <img src="images/calendar.png">
+                    <span> Schedule a service </span>
+                    
+                </div>
+                <form>
+                <div class="name">
+                    <input type="text" name="name" class="input-name" placeholder="Name*" required>
+                </div>
+  
+                <div class="mail">
+                    <input type="email" name="mail" class="input-mail" placeholder="Mail*" required>
+                </div>
+  
+                <div class="phone">
+                    <input type="text" name="number" class="input-phone" placeholder="Phone*" required>
+                </div>
+                <div class="phone">
+                  <input type="text" name="address" class="input-phone" placeholder="Address*" required>
+              </div>
+ 
+                 <div class="option">
+                
+                    <select id="service" name="service">
+                      <option selected disabled>Choose a Service:</option> 
+                      <option value="ac">Air Conditioning</option>
+                      <option value="Electrical">Electrical</option>
+                      <option value="Plumbing">plumbing</option>
+                      <option value="painting">Painting</option>
+                      <option value="painting">Carpentry</option>
+                      <option value="Glasses">Glasses & Aluminium</option>
+                    </select>
+                 </div>
+                 <div class="date">
+                    <input type="date" name="date" class="input-date">
+                 </div>
+
+                 <div class="time">
+                  <input type="time" name="time" class="input-time">
+                </div>
+  
+                   <input   type="submit"    class="cancelbtn" value=" Book now!"   >
+                 
+              
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">
+                    Cancel</button>
+                  </form>
+          </div>
+        </section>
+          <!-- End of Schedule -->
+
+
+
+
+       
+
+        <div class="Apply">
+          
+              <div class="container">
+                  <p>Interested to join our team ? 
+                    <button   onclick="location.href = 'Apply.html';"   class="upper">Apply Now !</a></button></p>
+                  
+              </div>
+          
+      </div>
+  
+            <!-- End Our Work -->
+
+        
+      
+     
+      <!-- End of Services -->
+
+      <!-- About us -->
+      <section class="aboutus" id="aboutus">
+       <div class="video-container">
+       <img src="images/video.png"  height="100%"; width="100%">
+       
+        </div>
+        
+        <div class="aboutus-wrapper">
+          <div class="about-bg">
+            <div class="about">
+              <img
+                src="images/1.jpg"
+                alt="About us image"
+                class="about-image"
+              />
+              <div class="about-text">
+                <h1 class="about-heading">
+                  ABOUT US
+                </h1>
+                <p class="about-paragraph">
+                  FIX IT is a leading Website that can help you to book your maintenance services and 
+                  civil works in less than a minute. All what you need is to submit a request through the Website 
+                  for the job you want to be done in your home or office, and will connect you with qualified specialist 
+                  from trusted local professionals. We use technology
+                  to deliver high-quality Specialist  to save your time and money.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="about-bg">
+            <div class="about">
+              <img
+                src="images/2.jpg"
+                alt="About us image"
+                class="about-image"
+              />
+              <div class="about-text">
+                <h1 class="about-heading">
+                  WHO ARE WE!
+                </h1>
+                <p class="about-paragraph">
+                  We're your application and home improvement experts.
+                  Contact us today and our help is on the way ...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of About us -->
+
+      
+      
+
+
+      <!-- Start Contact Form -->
+      <section class="contact" id="contact">
+      <div class="contact text-center">
+        <div class="overlay">
+            <div class="container">
+                <h2 class="upper">Get in  <span  style="color: #f7600e; font-family: Arial, Helvetica, sans-serif;">TOUCH</span></h2>
+                
+                <form>
+                  
+                    <input type="email" name="mail" placeholder="Your Email"required>
+                    <input type="text" name="subject" placeholder="Subject"required>
+                    <textarea placeholder="Message"required></textarea>
+                    <div class="info">
+                        <button class="upper" type="submit">Send</button>
+                        <span class="form-icons">
+                           <a href="https://www.facebook.com/Ahmedmousa612" target="_blank" style="text-decoration: none; border: none; margin: 0; padding: 0;"> <i class="fa fa-facebook"></i></a>
+                           <a href="https://twitter.com/Ahmadalaa100?fbclid=IwAR17T4LNJSYVJjO-j9meg5pLEdunMmsU9IatxUncwg9c-S3j2J07MjbsiTg" target="_blank" style="text-decoration: none; border: none; margin: 0; padding: 0;"> <i class="fa fa-twitter"></i></a>
+                           <a href="https://www.linkedin.com/in/Ahmadalaa100/?fbclid=IwAR1PU0cpIWQt9kGjxzYkR7DhyHNNtkKrnJ9fUwjc-es3GsR3V5A7mBBNrwM" target="_blank" style="text-decoration: none; border: none; margin: 0; padding: 0;"> <i class="fa fa-linkedin "></i></a>
+                        </span>
+                    </div>
+                </form>
+              </div>
+             
+            </div>
+        </div>
+    </div>
+  </section>
+    <!-- End Contact Form -->
+     
+    <div class="contact-us">
+      <div class="phone">
+        <img src="images/phone_PNG446.png">
+
+          <div class="text-phone">
+            <b>our phone</b> 
+            <p>+201200291529</p>
+          </div>
+
+      </div>
+
+     <div class="address">
+         <img src="images/address.png">
+
+         <div class="text-address">
+           <b> our address </b>
+         <p>  Tanta, El-Nady St.</p>
+          </div>
+          
+      </div>
+
+      <div class="email">
+          <img src="images/email_PNG1.png">
+
+          <div class="text-email">
+              <b> our mail </b>
+            <p>  info@Fixit.com</p>
+          </div>
+      </div>
+
+   </div> 
+     
+
+      <!------Footer-->
+      <footer class="footer" style=" background-color:#000;
+      padding: 1rem 0 2rem 0;
+      width: auto;
+      height: auto;">  
+      
+        <p class="footer-paragraph">
+        Copyright &copy; 2020 All Rights Reserved || Ahmed Alaa Mousa .
+        </p>
+      </footer>
+      
+
+    </div>
+  </div>
+    <script >
+      
+      var modal = document.getElementById('id01');
+      window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+     function myFunction() {
+            document.getElementById("id01").submit();
+}
+
+    </script>
+   
+  </body>
+</html>
